@@ -72,8 +72,7 @@ if __name__ == "__main__":
         dataset, batch_size=500, shuffle=False, drop_last=False
     )
     net = NetConv(channel=1, inner_dim=784, class_num=class_num).cuda()
-    # epochs = [250, 500, 1000, 3000]
-    epochs = [3000]
+    epochs = [50, 100, 250, 500, 1000, 3000]
     for epoch in epochs:
         model_fp = os.path.join("./save/checkpoint_{}.tar".format(epoch))
         checkpoint = torch.load(model_fp)

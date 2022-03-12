@@ -137,7 +137,7 @@ if __name__ == "__main__":
             f"Epoch [{epoch}/{epochs}]\t Clu Loss: {loss_clu_epoch / len(data_loader)}\t Rec Loss: {loss_rec_epoch / len(data_loader)}"
         )
 
-        if epoch % 250 == 0:
+        if epoch % 50 == 0:
             visualize_cluster_center()
             feature, label, pred = inference()
             nmi, ari, acc = evaluate(label, pred)

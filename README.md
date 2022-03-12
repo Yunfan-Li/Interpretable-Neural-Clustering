@@ -5,7 +5,9 @@ This is the code for the paper "XAI Beyond Classiﬁcation: Interpretable Neural
 To train the model on the MNIST dataset, run
 > python main.py
 
-The performance of the model is evaluated during the training process, together with the the visualization of the reconstructed cluster centers. To perform tSNE visualization, run
+The performance of the model is evaluated during the training process, together with the the visualization of the reconstructed cluster centers.
+
+To perform tSNE visualization, run
 >python tSNE.py
 
 # Citation
